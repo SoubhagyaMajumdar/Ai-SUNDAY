@@ -1,6 +1,6 @@
 import pyttsx3
-import speech_recognition as sr
 import eel
+import speech_recognition as sr
 import time
 
 def speak(text):
@@ -29,6 +29,7 @@ def takecommand():
         print(f"User said: {query}")
         eel.DisplayMessage(query)
         time.sleep(2)
+        eel.ShowHood()
     except Exception as e:
         return ""
     
@@ -39,6 +40,19 @@ def allCommands():
         query = takecommand()
         print(query)
 
+        if "introduce" in query:
+            from Engine.intro import Introduce
+            Introduce()
+        
+        if "how are you" in query:
+            from Engine.intro import HowAreYou
+            HowAreYou()
+        
+        if "goodbye" in query:
+            from Engine.intro import Bye
+            Bye()
+                   
+            
         if "open" in query:
             from Engine.features import openCommand
             openCommand(query)
@@ -47,3 +61,4 @@ def allCommands():
             PlayYoutube(query)
         else:
             print("Not run")
+        

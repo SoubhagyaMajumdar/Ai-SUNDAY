@@ -77,34 +77,48 @@ body{
   }
 }
 
+.Mic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /* Input Filed Start*/
-#TextInput {
+/*#TextInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #000000cf;
   border-color: blue;
   box-shadow: 0 0 20px rgb(25, 0, 255),
     inset 0 0 0px rgb(25, 0, 255);
   border-radius: 8px;
   color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+  width: 60px;
+  height: 60px;
+
+  padding: 10px;
+  margin: 20px
+  padding-right: 0px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin: 0px 20%;
-}
+  margin: 2px;
+}*/
 
-.input-field {
+/* .input-field {
   background-color: transparent;
   border: none;
-  width: 95%;
+  width: 5%;
   outline: none;
   color: rgb(0, 255, 247);
   font-family: cursive;
-}
+} */
 
 
 .glow-on-hover {
-  width: 35px;
-  height: 35px;
+  width: 55px;
+  height: 65px;
   border: none;
   outline: none;
   color: #00ffd5;

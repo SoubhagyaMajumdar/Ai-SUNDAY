@@ -2,7 +2,7 @@ import os
 import eel
 
 from Engine.features import *
-from Engine.command import *
+from Engine.command import * 
 
 eel.init("www")
 

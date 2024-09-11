@@ -3,8 +3,10 @@ import re
 import sqlite3
 import pyaudio
 import webbrowser
+
+
 from Engine.command import speak
-from playsound import playsound 
+from playsound import playsound
 import eel
 from Engine.config import ASSISTANT_NAME
 import pywhatkit as kit
@@ -50,6 +52,9 @@ def openCommand(query):
                         speak("not found")
         except:
             speak("some thing went wrong")
+            
+            
+
 
 def PlayYoutube(query):
     search_term = extract_yt_term(query)
